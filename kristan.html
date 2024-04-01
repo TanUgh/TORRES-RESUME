@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: #fff;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.p1{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg, #30d7e0, #023133);
+    padding: 50px;
+}
+h2{
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0.7em;
+    letter-spacing: 0.1em;
+}
+
+h2 span{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.group{
+    position: relative;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 20px;
+}
+.group .image{
+    position: relative;
+    width: 100%;
+}
+.group .image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.group p{
+    color: #fff;
+    font-size: 1.5em;
+}
+.bottom{
+    position: relative;
+    display: grid;
+    margin: 50px 50px 0;
+    gap: 40px;
+    grid-template-columns: 2fr 3fr;
+}
+.bottom .left_side{
+    margin-top: 50px;
+}
+h4{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #fff;
+    background:black;
+    font-weight: 600;
+    padding: 0 15px;
+    margin-top: 40px;
+    display: inline-flex;
+}
+.contactinfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.contactinfo li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.contactinfo li .icon{
+    color:black;
+}
+.contactinfo li .text{
+    color: #555;
+}
+.language{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.language .languagebox{
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+.language .languagebox p{
+    color: #333;
+}
+.language .languagebox .value{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #eee;
+}
+.language .languagebox .value::before{
+    content: '';
+    position: absolute;
+    width: var(--i);
+    height: 100%;
+    background:black;
+}
+.adjstmargin{
+    margin-top: -10px;
+}
+.education{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.edugroup{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.edugroup p:nth-child(1){
+    font-weight: 600;
+
+}
+.edugroup b{
+    font-weight: 600;
+    color:black;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="p1">
+            <h2>Kristan Torres<br></br></h2>
+            <div class="group">
+                <div class="leftside">
+                    <div class="image">
+                        <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-1/433446554_433744525834284_131648733083736675_n.jpg?stp=dst-jpg_s320x320&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE1yIQJqwpBsydNBVbFtvAG_UeIt5dxfBL9R4i3l3F8EjAVPLjJ9INQGfHxVHZ7oUu0jfzZD73_QtDtbEgMO4qP&_nc_ohc=FWRF7xGGo5EAX-hEIo-&_nc_ht=scontent.fdvo2-1.fna&oh=00_AfAu8m7ApEriDi0oDyOjZcqgRo76PwdYsL7w9sRr46KGIw&oe=660DB9B6">
+                 </div>       
+                </div>
+                <div class="rightside"><h1 style="color: white;">ABOUT ME</h1>
+                    <p>I'm Kristan Torres a second-year BSIT student from the University of Science and Technology of Southern Philippines, Oroquieta City Campus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left_side">
+                <h4>Contact Info</h4>
+                <ul class="contactinfo">
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class="text">09811057156</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="text">torreskristan43@gmail.com</span>
+                
+                  
+                  
+                    
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="text">P-4, Talic Oroquieta City, Misamis Occidental.</span>
+                    </li>
+                </ul>
+                <h4>My Hobbies</h4>
+                <div class="language">
+                    <div class="My Hobbies" style="--i:75%;">
+                        <p>Playing Mobile Games</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="languagebox" style="--i:40%;">
+                        <p>Drink Alcohol</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="languagebox" style="--i:90%;">
+                        <p>Play Basketball</p>
+                        <div class="value"></div>
+                    </div>
+                    <div class="languagebox" style="--i:80%;">
+                        <p>Manari og Manok</p>
+                        <div class="value"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <h4 class="adjstmargin">Education</h4>
+                <div class="education">
+                    <div class="edugroup">
+                        <p>
+                            2016
+                        </p>
+                        <div class="value">
+                            <b>Elementary</b>
+                            <p>I graduated from elementary school in <strong>New York City</strong> in 2016.</p>
+                        </div>
+                    </div>
+                    <div class="edugroup">
+                        <p>
+                            2022
+                        </p>
+                        <div class="value">
+                            <b>High School-Senior High</b>
+                            <p>Graduated from <strong>MONHS</strong> for <em>HUMSS</em> in the year 2022 during the pandemic era.</p>
+                        </div>
+                    </div>
+                    <div class="edugroup">
+                        <p>
+                            2026
+                        </p>
+                        <div class="value">
+                            <b>College</b>
+                            <p>Assuming I have graduated from college by this year at Harvard University.</p>
+                        </div>
+                    </div>
+                </div>
+                    <h4>Status</h4>
+                        <div class="education">
+                         <div class="edugroup">
+                        <p>Present Day</p>
+                        <div class="value">
+                            <b>Relationship Status</b>
+                            <p>Single</p>
+                        </div>
+                         </div>
+                        </div>
+                        <div class="education">
+                         <div class="edugroup">
+                        <p>
+                            
+                        </p>
+                        <div class="value">
+                            <b>How Long</b>
+                            <p>1 Year</p>
+                        </div>
+                         </div>
+                        </div>
+                        <div class="education">
+                         <div class="edugroup">
+                        <p>
+                            
+                        </p>
+                        <div class="value">
+                            <b>Looking for?</b>
+                            <p>Hot Mama nga walay anak.</p>
+                        </div>
+                         </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
